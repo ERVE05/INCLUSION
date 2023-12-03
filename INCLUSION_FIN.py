@@ -11,7 +11,7 @@ st.header("Prédire si le client va ouvrir un compte ou non")
 
 # Chargez le modèle depuis le fichier
 with open("clf_inclusion.pkl", 'rb') as model_file:
-    model = pickle.load(model_file)
+
 
 # Fonction de prediction
 def predict_bank_account(feature):
