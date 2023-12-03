@@ -14,14 +14,14 @@ with open("clf_inclusion.pkl", 'rb') as model_file:
 
 
 # Fonction de prediction
-def predict_bank_account(feature):
+ def predict_bank_account(feature):
     input_data = pd.DataFrame(feature, index=[0])
   # Créez un DataFrame à partir de la fonctionnalité d'entrée
     prediction = model.predict(input_data)
     return prediction[0]
 
 # Creation de l'application web via streamlit
-def main():
+ def main():
     # Le titre
     #st.title("Application de prediction d'ouverture de compte bancaire")
     # Description
